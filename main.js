@@ -7,9 +7,9 @@ const app = new Vue({
     methods: {
         pushRandomMail(){
            axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-           .then(function(response){
+           .then((response) => {
             
-            const result = response.response
+            const result = response.data.response
             this.secretArray.push(result)
            })
         },

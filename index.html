@@ -14,8 +14,8 @@
     <div id="app">
         <div class="text-center">
             <h1>Vue Email List</h1>
-            <div v-if="secretArray.length === 10 ">
-
+            <div v-if="secretArray.length >= 8 ">
+                <li v-for="email in secretArray"> {{email}}</li>
             </div>
         </div>
     </div>
