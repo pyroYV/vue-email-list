@@ -14,7 +14,7 @@ const app = new Vue({
            })
         },
         countToTen(){
-            for (let index = 0; index < 9; index++) {
+            for (let index = 0; index < 10; index++) {
                 this.pushRandomMail()
                 console.log(this.secretArray)
             }
